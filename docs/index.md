@@ -1,17 +1,15 @@
-# Welcome to MkDocs
+# Blender Snippet Gallery
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+```py
+import bpy
+from IPython.display import display, Image
 
-## Commands
+path = "test.png"
+bpy.context.scene.render.resolution_x = 500
+bpy.context.scene.render.resolution_y = 200
+bpy.ops.render.render()
+bpy.data.images["Render Result"].save_render(filepath=path)
+display(Image(filename=path))
+```
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+![alt text](image.png)
