@@ -1,6 +1,7 @@
 # Blender Snippet Gallery
 
-```py
+```py hl_lines="4-9"
+
 import bpy
 from IPython.display import display, Image
 
@@ -13,5 +14,4 @@ display(Image(filename=path))
 ```
 
 ![alt text](image.png)
-
 
