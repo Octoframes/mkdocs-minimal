@@ -1,6 +1,5 @@
-# Blender Snippet Gallery
-
-```py hl_lines="4-9"
+# Blender Snippet Gallery 2
+```py hl_lines="4-9" 
 
 import bpy
 from IPython.display import display, Image
@@ -11,7 +10,8 @@ bpy.context.scene.render.resolution_y = 200
 bpy.ops.render.render()
 bpy.data.images["Render Result"].save_render(filepath=path)
 display(Image(filename=path))
+print("hi")
 ```
 
-![alt text](image.png)
+<img src="image.png" alt="alt text" width="300"/>
 
