@@ -1,9 +1,9 @@
 site_name: Python with Notebooks
 
+
 nav:
   - Home: index.md
-  - Installation: installation.md
-
+  - Getting Started: getting_started.md
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -13,9 +13,15 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+
 
 theme:
   name: "material"  # Add this line to specify the theme
 
   features:
     - content.code.copy
+
+
+

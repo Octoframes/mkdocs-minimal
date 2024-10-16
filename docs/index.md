@@ -10,7 +10,6 @@ bpy.context.scene.render.resolution_y = 200
 bpy.ops.render.render()
 bpy.data.images["Render Result"].save_render(filepath=path)
 display(Image(filename=path))
-print("hi")
 ```
 
 <img src="image.png" alt="alt text" width="300"/>
