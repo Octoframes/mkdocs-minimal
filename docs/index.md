@@ -17,4 +17,4 @@ display(Image(filename=path))
 
 and another one:
 
-<video controls src="video.mp4" title="Title"></video>
+<video controls src="../video.mp4" title="Title"></video>
