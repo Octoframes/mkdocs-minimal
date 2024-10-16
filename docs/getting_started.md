@@ -34,21 +34,27 @@ No need to use vitual environments, and also no need to manage the python instal
     display(Image(filename="test.png"))
     ```
 
+Note, that **headless-mode will *only* run with Python 3.11. (as of Blender 4.2)
 
 # Using in GUI-mode
 
-Here, we first need to install [blender_notebook](https://github.com/cheng-chi/blender_notebook) in order to get 
+We first need to install [blender_notebook](https://github.com/cheng-chi/blender_notebook) in order to register the blender kernel to our notebook environment.
 
-On MacOS, that's
+Also here, we're using the package manager [uv](https://docs.astral.sh/uv/getting-started/installation/).
+
+On **MacOS**, that's done by
 ```
 uvx blender_notebook install --blender-exec="/Applications/Blender.app/Contents/MacOS/Blender"
 uvx --python 3.11 jupyter lab
 ``` 
 
 
-On Windows, that's #TODO: TEST THIS FIRST
+On **Windows**, that's #TODO: TEST THIS FIRST, MAYBE ADJUST PATH
 ```py
-
+uvx blender_notebook install --blender-exec="C:\Program Files\Blender Foundation\Blender 4.2\blender.exe"
+uvx --python 3.11 jupyter lab
 ```
 
-We're using the package manager [uv](https://docs.astral.sh/uv/getting-started/installation/).
+Now you can select the Blender kernel in Jupyter Lab.
+
+Note: in GUI-mode, you can also use other notebook environments, e.g. VS Code notebooks or Saryrn notebooks.
