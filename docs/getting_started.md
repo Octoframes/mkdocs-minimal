@@ -58,9 +58,4 @@ uvx --python 3.11 jupyter lab
 Now you can select the Blender kernel in Jupyter Lab.
 
 Note: in GUI-mode, you can also use other notebook environments, e.g. VS Code notebooks or Saryrn notebooks.
-
-<video controls>
-<source src="vid_1.mp4" type="video/mp4">
-</video>
-
-
+<iframe width="100%" height="400px" src="https://streamable.com/e/1cca8s" frameborder="0" allowfullscreen></iframe>
