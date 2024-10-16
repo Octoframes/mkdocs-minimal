@@ -62,3 +62,7 @@ Note: in GUI-mode, you can also use other notebook environments, e.g. VS Code no
 
 
 ![alt text](out.gif)
+
+Last try:
+
+<video controls src="../video.mp4" title="Title"></video>

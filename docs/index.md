@@ -14,3 +14,7 @@ display(Image(filename=path))
 
 <img src="image.png" alt="alt text" width="300"/>
 
+
+and another one:
+
+<video controls src="video.mp4" title="Title"></video>
