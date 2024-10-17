@@ -7,7 +7,7 @@ print(bpy.app.version_string)
 #out: 4.2.3 LTS
 ```
 
-
+Choosing a **render engine**:
 
 
 ```py
@@ -38,7 +38,7 @@ display(Image(filename="test.png"))
 
 
 
-
+Setting **sample size** in cycles to 10:
 
 ```
 bpy.context.scene.render.engine = "CYCLES"
