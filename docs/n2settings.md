@@ -10,7 +10,7 @@ print(bpy.app.version_string)
 Choosing a **render engine**:
 
 
-```py
+```py hl_lines="4"
 import bpy
 from IPython.display import display, Image
 
@@ -25,7 +25,7 @@ display(Image(filename="test.png"))
 ![alt text](image-1.png)
 
 
-```py
+```py hl_lines="1"
 bpy.context.scene.render.engine = "BLENDER_EEVEE_NEXT"
 bpy.context.scene.render.resolution_x = 400
 bpy.context.scene.render.resolution_y = 200
@@ -40,7 +40,8 @@ display(Image(filename="test.png"))
 
 Setting **sample size** in cycles to 10:
 
-```py
+```py hl_lines="1-2"
+
 bpy.context.scene.render.engine = "CYCLES"
 bpy.context.scene.cycles.samples = 10  # Set sample size to 100
 
@@ -55,7 +56,7 @@ display(Image(filename="test.png"))
 
 
 Transparent output:
-```py
+```py hl_lines="1-3"
 bpy.context.scene.render.image_settings.file_format = 'PNG'
 bpy.context.scene.render.image_settings.color_mode = 'RGBA'
 bpy.context.scene.render.film_transparent = True

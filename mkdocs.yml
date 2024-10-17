@@ -1,4 +1,4 @@
-site_name: Python with Notebooks
+site_name: Blender with Notebooks
 
 
 nav:
@@ -6,6 +6,10 @@ nav:
   - Getting Started: n1getting_started.md
   - Settings: n2settings.md
   - Shapes: n3shapes.md
+
+extra_css:
+  - style.css
+
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -19,11 +23,13 @@ markdown_extensions:
   - admonition
 
 
+
 theme:
   name: "material"  # Add this line to specify the theme
 
   features:
     - content.code.copy
+
 
 
 
