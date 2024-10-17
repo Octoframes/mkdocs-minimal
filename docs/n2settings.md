@@ -25,7 +25,7 @@ display(Image(filename="test.png"))
 ![alt text](image-1.png)
 
 
-```
+```py
 bpy.context.scene.render.engine = "BLENDER_EEVEE_NEXT"
 bpy.context.scene.render.resolution_x = 400
 bpy.context.scene.render.resolution_y = 200
@@ -40,7 +40,7 @@ display(Image(filename="test.png"))
 
 Setting **sample size** in cycles to 10:
 
-```
+```py
 bpy.context.scene.render.engine = "CYCLES"
 bpy.context.scene.cycles.samples = 10  # Set sample size to 100
 
@@ -52,3 +52,19 @@ display(Image(filename="test.png"))
 ```
 
 ![alt text](image-3.png)
+
+
+Transparent output:
+```py
+bpy.context.scene.render.image_settings.file_format = 'PNG'
+bpy.context.scene.render.image_settings.color_mode = 'RGBA'
+bpy.context.scene.render.film_transparent = True
+
+
+bpy.context.scene.render.resolution_x = 400
+bpy.context.scene.render.resolution_y = 200
+bpy.ops.render.render()
+bpy.data.images["Render Result"].save_render(filepath="test.png")
+display(Image(filename="test.png"))
+```
+![alt text](image-4.png)
