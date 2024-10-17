@@ -1,26 +1,11 @@
-# Blender Snippet Gallery 2
-```py hl_lines="4-9" 
-
-import bpy
-from IPython.display import display, Image
-
-path = "test.png"
-bpy.context.scene.render.resolution_x = 500
-bpy.context.scene.render.resolution_y = 200
-bpy.ops.render.render()
-bpy.data.images["Render Result"].save_render(filepath=path)
-display(Image(filename=path))
-```
-
-<img src="image.png" alt="alt text" width="300"/>
-
-
-and another one:
+# Blender Snippet Gallery 
 
 
 
+<!-- 
 Version A)
 <video controls src="../video.mp4" title="Title"></video>
 
+Version B)
 <!-- Very strange but ONLY in index.md the videos have to be "video.mp4" and not "../video.mp4" -->
-<video controls src="video.mp4" title="Title"></video>
+<!-- <video controls src="video.mp4" title="Title"></video> --> -->

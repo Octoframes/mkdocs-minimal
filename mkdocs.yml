@@ -4,6 +4,7 @@ site_name: Python with Notebooks
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
+  - Shapes: n2shapes.md
 
 markdown_extensions:
   - pymdownx.highlight:

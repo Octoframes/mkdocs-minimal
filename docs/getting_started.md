@@ -70,3 +70,4 @@ Version A)
 <video controls src="../video.mp4" title="Title"></video>
 Version B)
 <video controls src="video.mp4" title="Title"></video>
+
