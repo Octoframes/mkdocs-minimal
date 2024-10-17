@@ -30,8 +30,8 @@ No need to use vitual environments, and also no need to manage the python instal
     import bpy
     from IPython.display import display, Image
     bpy.ops.render.render()
-    bpy.data.images["Render Result"].save_render(filepath="test.png")
-    display(Image(filename="test.png"))
+    bpy.data.images["Render Result"].save_render(filepath="img.png")
+    display(Image(filename="img.png"))
     ```
 
 Note, that **headless-mode will *only* run with Python 3.11. (as of Blender 4.2)
