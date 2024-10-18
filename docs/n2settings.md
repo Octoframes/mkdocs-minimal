@@ -69,3 +69,4 @@ bpy.data.images["Render Result"].save_render(filepath="img.png")
 display(Image(filename="img.png"))
 ```
 ![alt text](image-4.png)
+

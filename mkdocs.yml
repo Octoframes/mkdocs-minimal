@@ -5,10 +5,7 @@ nav:
   - Home: index.md
   - Getting Started: n1getting_started.md
   - Settings: n2settings.md
-  - Shapes: n3shapes.md
-  - Manipulate Geonodes: n4manipulate_geonodes.md
-  - Setup Geonodes: n5setup_geonodes.md
-  - Setup Shader: n6setup_shader.md
+
 
 
 
@@ -28,13 +25,14 @@ markdown_extensions:
   - admonition
 
 
+plugins:
+    - mkdocs-jupyter
+
 
 theme:
   name: "material"  # Add this line to specify the theme
 
   features:
     - content.code.copy
-
-
 
 
